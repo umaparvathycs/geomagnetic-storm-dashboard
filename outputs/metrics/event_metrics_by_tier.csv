@@ -1,0 +1,4 @@
+intensity_tier,reference_storms,matched_1to1,missed_1to1,recall_1to1,storms_with_overlap,coverage_rate
+Weak,196,129,67,0.6582,196,1.0
+Moderate,55,48,7,0.8727,55,1.0
+Intense,5,4,1,0.8,5,1.0

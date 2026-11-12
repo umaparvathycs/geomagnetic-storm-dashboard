@@ -1,0 +1,4 @@
+split,windows,storm_windows,non_storm_windows,storm_fraction
+train,464545,134801,329744,0.2902
+val,52537,11017,41520,0.2097
+test,43801,5877,37924,0.1342

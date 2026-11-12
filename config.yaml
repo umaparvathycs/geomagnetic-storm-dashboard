@@ -1,0 +1,132 @@
+# ============================================================
+# GEOMAGNETIC STORM PROJECT - MASTER CONFIGURATION
+# ============================================================
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  catalogue_dir: data/catalogue
+  plots_dir: outputs/plots
+  figures_dir: outputs/figures
+  metrics_dir: outputs/metrics
+  models_dir: outputs/models
+
+  clean_series: data/processed/dst_hourly_clean.csv
+  raw_series: data/processed/dst_raw_hourly.csv
+  catalogue: data/catalogue/storm_catalogue.csv
+
+
+# ============================================================
+# DATA
+# ============================================================
+
+data:
+  base_url: https://wdc.kugi.kyoto-u.ac.jp
+
+  products:
+    - name: dst_final
+      start: "1957-01"
+      end: "2020-12"
+
+    - name: dst_provisional
+      start: "2021-01"
+      end: null
+
+    - name: dst_realtime
+      start: null
+      end: null
+
+  refetch_last_n_months: 3
+
+  missing_value: 9999
+
+  plausible_abs_max_nt: 1000
+
+  add_base_value: false
+
+  timestamp_convention: hour_start
+
+  max_interp_gap_hours: 0
+
+
+# ============================================================
+# DETERMINISTIC STORM DETECTION
+# ============================================================
+
+detection:
+
+  # Teacher/project storm threshold
+  trigger_nt: -30.0
+
+  # Storm considered recovered when Dst reaches this level
+  release_nt: -20.0
+
+  # Merge nearby below-threshold cores
+  merge_gap_hours: 6
+
+  # Minimum number of trigger hours
+  min_core_hours: 1
+
+  # Maximum number of hours used to search backward for onset
+  max_lookback_hours: 24
+
+  # Recovery-to-150 metric
+  crossing_level_nt: -150.0
+
+  # Intensity convention:
+  # (lower, upper]
+  #
+  # -50 belongs to Moderate
+  # -100 belongs to Intense
+  # -250 belongs to Severe
+  # -350 belongs to Extreme
+
+  tiers:
+    Weak: [-50, -30]
+    Moderate: [-100, -50]
+    Intense: [-250, -100]
+    Severe: [-350, -250]
+    Extreme: [null, -350]
+
+
+# ============================================================
+# CNN
+# ============================================================
+
+cnn:
+  seed: 42
+
+  window_hours: 48
+
+  label_position: last
+
+  scale_nt: 100.0
+
+  split:
+    train: ["1957-01-01", "2009-12-31"]
+    val: ["2010-01-01", "2015-12-31"]
+    test: ["2016-01-01", null]
+
+  epochs: 30
+
+  batch_size: 512
+
+  lr: 0.001
+
+  patience: 5
+
+  event_merge_gap_hours: 6
+
+  example_plots: 6
+
+
+# ============================================================
+# KNOWN SANITY-CHECK EVENT
+# ============================================================
+
+known_events:
+
+  - name: "March 1989"
+    date_from: "1989-03-10"
+    date_to: "1989-03-20"
+    min_dst_nt: -589

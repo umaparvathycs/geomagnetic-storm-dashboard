@@ -1,0 +1,131 @@
+{
+  "task": "Storm Peak Severity Prediction from Initial 6 Hours",
+  "evaluation_period": "2016-2020",
+  "test_storms": 257,
+  "accuracy": 0.8871595330739299,
+  "macro_f1": 0.6827697262479872,
+  "weighted_f1": 0.8783623752326172,
+  "confusion_matrix": [
+    [
+      194,
+      2,
+      1
+    ],
+    [
+      21,
+      32,
+      2
+    ],
+    [
+      2,
+      1,
+      2
+    ]
+  ],
+  "class_report": {
+    "Weak (-30 to -50 nT)": {
+      "precision": 0.8940092165898618,
+      "recall": 0.9847715736040609,
+      "f1-score": 0.9371980676328503,
+      "support": 197.0
+    },
+    "Moderate (-50 to -100 nT)": {
+      "precision": 0.9142857142857143,
+      "recall": 0.5818181818181818,
+      "f1-score": 0.7111111111111111,
+      "support": 55.0
+    },
+    "Intense+ (<= -100 nT)": {
+      "precision": 0.4,
+      "recall": 0.4,
+      "f1-score": 0.4,
+      "support": 5.0
+    },
+    "accuracy": 0.8871595330739299,
+    "macro avg": {
+      "precision": 0.7360983102918587,
+      "recall": 0.6555299184740808,
+      "f1-score": 0.6827697262479872,
+      "support": 257.0
+    },
+    "weighted avg": {
+      "precision": 0.8887374706378095,
+      "recall": 0.8871595330739299,
+      "f1-score": 0.8783623752326172,
+      "support": 257.0
+    }
+  },
+  "lead_time_statistics": {
+    "mean_lead_time_hours": 1.2684824902723735,
+    "median_lead_time_hours": -1.0,
+    "p25_lead_time_hours": -3.0,
+    "p75_lead_time_hours": 2.0,
+    "pct_storms_with_advance_lead_time": 30.35019455252918,
+    "mean_positive_lead_time_hours": 9.564102564102564,
+    "median_positive_lead_time_hours": 6.0,
+    "intense_storms_count": 5,
+    "intense_mean_lead_time_hours": 6.8,
+    "intense_median_lead_time_hours": 9.0,
+    "intense_individual_lead_times": [
+      9.0,
+      9.0,
+      4.0,
+      0.0,
+      12.0
+    ]
+  },
+  "top_features": [
+    {
+      "feature": "min_6h",
+      "importance": 0.4781886529231012
+    },
+    {
+      "feature": "dst_6h",
+      "importance": 0.16769399643530564
+    },
+    {
+      "feature": "volatility_6h",
+      "importance": 0.05485368562052274
+    },
+    {
+      "feature": "slope_6h",
+      "importance": 0.04627760215055312
+    },
+    {
+      "feature": "dst_5h",
+      "importance": 0.04492352696919849
+    },
+    {
+      "feature": "mean_6h",
+      "importance": 0.03591339716585629
+    },
+    {
+      "feature": "accel_6h",
+      "importance": 0.030105952889561177
+    },
+    {
+      "feature": "dst_2h",
+      "importance": 0.029733905803310926
+    },
+    {
+      "feature": "dst_4h",
+      "importance": 0.027212769259292016
+    },
+    {
+      "feature": "dst_3h",
+      "importance": 0.024116895888473534
+    },
+    {
+      "feature": "drop_6h",
+      "importance": 0.02096741289332146
+    },
+    {
+      "feature": "dst_1h",
+      "importance": 0.020439999555946702
+    },
+    {
+      "feature": "dst_0h",
+      "importance": 0.019572202445556578
+    }
+  ]
+}

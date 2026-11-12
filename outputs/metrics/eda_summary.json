@@ -1,0 +1,19 @@
+{
+  "rows": 561024,
+  "start": "1957-01-01 00:00:00+00:00",
+  "end": "2020-12-31 23:00:00+00:00",
+  "duplicate_timestamps": 0,
+  "missing_dst_values": 0,
+  "timestamp_gaps_gt_1h": 0,
+  "dst_min_nt": -589.0,
+  "dst_max_nt": 92.0,
+  "dst_mean_nt": -15.025982845653662,
+  "dst_median_nt": -11.0,
+  "dst_std_nt": 23.294566150149098,
+  "dst_q01_nt": -98.0,
+  "dst_q05_nt": -54.0,
+  "dst_q25_nt": -23.0,
+  "dst_q75_nt": -1.0,
+  "dst_q95_nt": 11.0,
+  "dst_q99_nt": 21.0
+}

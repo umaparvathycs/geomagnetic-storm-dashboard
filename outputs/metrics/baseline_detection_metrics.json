@@ -1,0 +1,42 @@
+{
+  "method": "deterministic_baseline",
+  "parameters": {
+    "trigger_nt": -30.0,
+    "release_nt": -20.0,
+    "merge_gap_hours": 6,
+    "min_core_hours": 1,
+    "max_lookback_hours": 24,
+    "crossing_level_nt": -150.0
+  },
+  "dataset": {
+    "observations": 609936,
+    "start": "1957-01-01 00:00:00+00:00",
+    "end": "2026-07-31 23:00:00+00:00"
+  },
+  "n_storms": 5251,
+  "duration_hours": {
+    "mean": 29.830127594743857,
+    "median": 16.0,
+    "min": 2.0,
+    "max": 531.0,
+    "p95": 102.0
+  },
+  "min_dst_nt": {
+    "mean": -52.7575699866692,
+    "median": -39.0,
+    "min": -589.0,
+    "max": -30.0
+  },
+  "intensity_distribution": {
+    "Extreme": 11,
+    "Intense": 355,
+    "Moderate": 1264,
+    "Severe": 28,
+    "Weak": 3593
+  },
+  "quality_flags": {
+    "ok": 4833,
+    "split_without_recovery": 416,
+    "start_at_peak": 2
+  }
+}

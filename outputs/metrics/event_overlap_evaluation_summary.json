@@ -1,0 +1,14 @@
+{
+  "method": "any temporal overlap; supplementary, many-to-many",
+  "minimum_overlap_hours": 1,
+  "reference_storms": 256,
+  "predicted_events": 285,
+  "reference_storms_with_overlap": 256,
+  "reference_storms_without_overlap": 0,
+  "predicted_events_with_overlap": 181,
+  "predicted_events_without_overlap": 104,
+  "overlapping_event_pairs": 257,
+  "predictions_overlapping_multiple_reference_storms": 50,
+  "reference_detection_rate": 1.0,
+  "prediction_overlap_rate": 0.6350877192982456
+}

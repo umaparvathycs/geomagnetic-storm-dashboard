@@ -1,0 +1,13 @@
+# Tested here (core, non-DL): numpy 2.4.4, pandas 3.0.2, matplotlib 3.10.8, scikit-learn 1.8.0, scipy 1.17.1, PyYAML 6.0.3
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+scikit-learn>=1.3
+PyYAML>=6.0
+joblib>=1.3
+# CNN
+torch>=2.2
+# Interactive Dashboard & Web Interface
+streamlit>=1.30
+# Testing
+pytest>=8.0

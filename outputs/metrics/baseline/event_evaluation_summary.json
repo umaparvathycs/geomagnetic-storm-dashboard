@@ -1,0 +1,15 @@
+{
+  "evaluation": "one-to-one event matching by temporal overlap",
+  "test_start": "2016-01-02 23:00:00+00:00",
+  "test_end": "2020-12-31 23:00:00+00:00",
+  "hourly_probability_threshold": 0.5,
+  "event_merge_gap_hours": 6,
+  "reference_events": 256,
+  "predicted_events": 285,
+  "detected_storms": 181,
+  "missed_storms": 75,
+  "false_detections": 104,
+  "event_precision": 0.6350877192982456,
+  "event_recall": 0.70703125,
+  "event_f1": 0.6691312384473197
+}

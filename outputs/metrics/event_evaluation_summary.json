@@ -1,0 +1,69 @@
+{
+  "evaluation": "one-to-one event matching by temporal overlap",
+  "test_start": "2016-01-02 23:00:00+00:00",
+  "test_end": "2020-12-31 23:00:00+00:00",
+  "hourly_probability_threshold": 0.5,
+  "event_merge_gap_hours": 6,
+  "reference_events": 256,
+  "predicted_events": 285,
+  "detected_storms": 181,
+  "missed_storms": 75,
+  "false_detections": 104,
+  "event_precision": 0.6350877192982456,
+  "event_recall": 0.70703125,
+  "event_f1": 0.6691312384473197,
+  "hourly_classification": {
+    "test_windows": 43801,
+    "accuracy": 0.972534873633022,
+    "precision": 0.8973138388303298,
+    "recall": 0.898077250297771,
+    "f1": 0.8976953822603962,
+    "pr_auc": 0.9581143947173761,
+    "confusion_matrix": [
+      [
+        37320,
+        604
+      ],
+      [
+        599,
+        5278
+      ]
+    ]
+  },
+  "timing_and_duration": {
+    "onset_delay_hours": {
+      "mean": -1.26,
+      "median": 2.0,
+      "std": 14.23
+    },
+    "duration_error_hours": {
+      "mean": 7.37,
+      "median": 0.0,
+      "std": 20.59
+    },
+    "overlap_hours": {
+      "mean": 23.71,
+      "median": 14.0,
+      "min": 1,
+      "max": 177
+    }
+  },
+  "coverage_analysis": {
+    "reference_storms_with_overlap": 256,
+    "reference_storms_without_overlap": 0,
+    "reference_detection_rate": 1.0,
+    "reference_storms_coverage_ge_50pct": 252,
+    "reference_storms_coverage_ge_80pct": 203,
+    "reference_storms_coverage_100pct": 109,
+    "predictions_overlapping_multiple_reference_storms": 50,
+    "predicted_events_with_overlap": 181,
+    "predicted_events_without_overlap": 104
+  },
+  "false_detection_analysis": {
+    "total_false_detections": 104,
+    "reached_catalog_threshold_le_minus30": 0,
+    "near_threshold_depression_minus25_to_minus30": 76,
+    "weak_or_quiet_gt_minus25": 28,
+    "median_duration_hours": 1.0
+  }
+}

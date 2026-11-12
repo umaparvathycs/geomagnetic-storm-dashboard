@@ -1,0 +1,72 @@
+{
+  "method": "grid_search_with_one_step_neighbor_robustness",
+  "parameter_space": {
+    "trigger_nt": [
+      -40.0,
+      -35.0,
+      -30.0,
+      -25.0
+    ],
+    "release_nt": [
+      -25.0,
+      -20.0,
+      -15.0,
+      -10.0
+    ],
+    "merge_gap_hours": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "min_core_hours": [
+      1,
+      2,
+      3
+    ]
+  },
+  "number_of_combinations": 180,
+  "successful_combinations": 180,
+  "failed_combinations": 0,
+  "objective_weights": {
+    "reference_performance": 0.7,
+    "structural_validity": 0.2,
+    "local_robustness": 0.1
+  },
+  "baseline_parameters": {
+    "trigger_nt": -30.0,
+    "release_nt": -20.0,
+    "merge_gap_hours": 6,
+    "min_core_hours": 1,
+    "max_lookback_hours": 24,
+    "crossing_level_nt": -150.0
+  },
+  "best_parameters": {
+    "trigger_nt": -25.0,
+    "release_nt": -15.0,
+    "merge_gap_hours": 12,
+    "min_core_hours": 3
+  },
+  "best_objective": {
+    "objective": 0.9923297692740574,
+    "reference_score": 1.0,
+    "structural_score": 1.0,
+    "robustness_score": 0.923297692740574,
+    "storm_count": 3554,
+    "reference_events": 1,
+    "reference_detected": 1,
+    "reference_min_matches": 1,
+    "reference_fragmented": 0,
+    "structural_problems": 0,
+    "neighbor_count_n": 5
+  },
+  "known_events": [
+    {
+      "name": "March 1989",
+      "date_from": "1989-03-10T00:00:00+00:00",
+      "date_to": "1989-03-20T00:00:00+00:00",
+      "min_dst_nt": -589.0
+    }
+  ],
+  "scientific_caveat": "Optimization is only as representative as the independent reference events. A small reference set can identify parameters that fit those cases but does not establish general performance. No baseline catalogue count/duration targets or CNN performance are used as ground truth."
+}

@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+   non-storm     0.9758    0.9887    0.9822     76694
+       storm     0.9422    0.8827    0.9115     16019
+
+    accuracy                         0.9704     92713
+   macro avg     0.9590    0.9357    0.9469     92713
+weighted avg     0.9700    0.9704    0.9700     92713

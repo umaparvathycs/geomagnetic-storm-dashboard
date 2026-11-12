@@ -1,0 +1,16 @@
+{
+  "start_utc": "1957-01-01 00:00:00+00:00",
+  "end_utc": "2026-07-31 23:00:00+00:00",
+  "observed_hours": 609936,
+  "expected_hours": 609936,
+  "missing_hours": 0,
+  "duplicate_timestamps": 0,
+  "minimum_dst_nt": -589.0,
+  "maximum_dst_nt": 92.0,
+  "mean_dst_nt": -14.717286731722673,
+  "median_dst_nt": -10.0,
+  "products": [
+    "dst_final",
+    "dst_provisional"
+  ]
+}

@@ -1,0 +1,6 @@
+intensity_tier,detected_any,detected_cov50,coverage
+Extreme,1.0,1.0,1.0
+Intense,1.0,1.0,0.9498
+Moderate,1.0,1.0,0.9150714285714285
+Severe,1.0,1.0,1.0
+Weak,1.0,0.9336016096579477,0.7691287726358149

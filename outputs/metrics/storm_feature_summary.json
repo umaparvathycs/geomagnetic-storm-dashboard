@@ -1,0 +1,34 @@
+{
+  "n_storms": 5251,
+  "validation": {
+    "rows": 5251,
+    "duplicate_storm_ids": 0,
+    "invalid_time_order": 0,
+    "negative_total_duration": 0,
+    "negative_main_phase": 0,
+    "negative_recovery_phase": 0,
+    "negative_descent_rate": 0,
+    "duration_consistency_errors": 0,
+    "invalid_min_dst": 0,
+    "missing_min_dst": 0,
+    "missing_start_time": 0,
+    "missing_peak_time": 0,
+    "missing_end_time": 0
+  },
+  "intensity_distribution": {
+    "Extreme": 11,
+    "Intense": 355,
+    "Moderate": 1264,
+    "Severe": 28,
+    "Weak": 3593
+  },
+  "quality_flag_distribution": {
+    "ok": 4833,
+    "split_without_recovery": 416,
+    "start_at_peak": 2
+  },
+  "data_product_distribution": {
+    "dst_final": 4824,
+    "dst_provisional": 427
+  }
+}
