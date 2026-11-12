@@ -20,6 +20,12 @@ evaluation, and a monthly update pipeline for a living catalogue.
 | Monthly catalogue update pipeline | **Implemented** (`src/update_catalogue.py`) |
 | Early-warning intensity prototype (6-hour onset) | **Prototype** (88.72% accuracy; see limitations below) |
 
+## 🚀 Live Dashboard
+
+Access the deployed application here:
+
+🔗 **[Geomagnetic Storm Identification – Live Dashboard](https://geomagnetic-storm-dashboard-8pvf3yyrh4a6vnqvrdhn37.streamlit.app/)**
+
 ## Quick Start
 
 ```bash
